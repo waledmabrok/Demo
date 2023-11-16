@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/signup">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/person_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/person1"
+        android:drawablePadding="5dp"
+        android:hint="NAME"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/id_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="5dp"
+        android:hint="email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/id_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/pass1"
+        android:drawablePadding="5dp"
+        android:hint="password"
+        android:inputType="textPassword" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" ConfirmPassword"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/pass1"
+        android:drawablePadding="5dp"
+        />
+
+    <Spinner
+        android:id="@+id/sp_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:entries="@array/arr1">
+
+
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/sp_role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:entries="@array/arr2">
+
+
+    </Spinner>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rad_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rad_fem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"></RadioButton>
+    </RadioGroup>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:checked="true"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"></Switch>
+
+    <Button
+        android:id="@+id/Btn_2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SIGNUP" />
+    <TextView
+        android:onClick="bunext"
+        android:id="@+id/Log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DO You HAVE AN ACOUNT ?  Login"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+
+        />
+
+</LinearLayout>

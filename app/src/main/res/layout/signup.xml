@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:src="@drawable/signup">
+
+</ImageView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NAME"
+        android:inputType="textEmailAddress"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/person"
+        android:drawablePadding="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="numberPassword"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/pass1"
+        android:drawablePadding="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" ConfirmPassword"
+        android:inputType="numberPassword"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/pass1"
+        android:drawablePadding="5dp"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:entries="@array/arr1"
+        android:layout_margin="20dp">
+
+
+    </Spinner>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"></RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"></RadioButton>
+    </RadioGroup>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:checked="true"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"></Switch>
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="SIGNUP"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
